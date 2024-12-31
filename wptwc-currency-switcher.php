@@ -3,9 +3,9 @@
  * Plugin Name: WPT Currency Switcher
  * Description: Automatically switches WooCommerce prices based on the user's location.
  * Virsion: 1.1
- * Author Name: MD AL AMIN ISLAM
- * Author URI: https://wpthinkers.com
- * Plugin URI: https://wpthinkers.com/plugins
+ * Author: MD AL AMIN ISLAM
+ * Author URI: https://wpthinkers.com/
+ * Plugin URI: https://wpthinkers.com/plugins/
  * License: GPL v2
  * Text Domain: wptwc-currency-switcher
  */
@@ -23,5 +23,6 @@
  }
 
  require_once WPWC_PLUGIN_PATH . 'inc/class-wpwc-currency-switcher.php';
+ require_once WPWC_PLUGIN_PATH . 'inc/Enqueue.php';
 
  add_action( 'plugins_loaded', ['WPWC_Currency_Swithcer', 'init'] );
