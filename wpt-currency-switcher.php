@@ -7,7 +7,7 @@
  * Author URI: https://wpthinkers.com/
  * Plugin URI: https://wpthinkers.com/plugins/
  * License: GPL v2
- * Text Domain: wptwc-currency-switcher
+ * Text Domain: wpt-currency-switcher
  */
 
  if(!defined('ABSPATH')){
@@ -22,7 +22,7 @@
     define('WPWC_PLUGIN_URL', plugin_dir_url(__FILE__));
  }
 
- require_once WPWC_PLUGIN_PATH . 'inc/class-wpwc-currency-switcher.php';
- require_once WPWC_PLUGIN_PATH . 'inc/Enqueue.php';
+ require_once WPWC_PLUGIN_PATH . 'inc/class-wpt-currency-switcher.php';
+ require_once WPWC_PLUGIN_PATH . 'inc/class-wpt-enqueue.php';
 
- add_action( 'plugins_loaded', ['WPWC_Currency_Swithcer', 'init'] );
+ add_action( 'plugins_loaded', ['WPT_Currency_Swithcer', 'init'] );
